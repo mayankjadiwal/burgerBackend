@@ -52,6 +52,7 @@ const placeOrder = async (req,res) =>{
         })
 
         res.json({success:true,session_url:session.url})
+        res.redirect('https://burger28.netlify.app/myorders');
 
     } catch (error) {
         console.log(error);
